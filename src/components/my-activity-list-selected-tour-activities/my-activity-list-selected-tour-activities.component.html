@@ -1,0 +1,23 @@
+<div class="activityDiv" *ngFor="let activity of selectedTourActivities">
+  <ion-item class="activitiesItems" no-lines>
+    <ion-avatar item-start padding>
+      <img src="assets/img/all-inclusive/activity-sign-up/SelectedActivityLogo.png">
+    </ion-avatar>
+    <h2><b>{{activity.showInfo.title}}</b></h2>
+    <p>Distance: {{activity.showInfo.distance}}</p>
+    <p>Tour Length: {{activity.showInfo.tourLength}}</p>
+    <p>Leave: {{activity.showInfo.pmDeparture}}</p>
+    <p>Energy Level: {{activity.showInfo.energyLevel}}</p>
+    <p>Cost: {{activity.showInfo.cost}}</p><br>
+    <p>{{activity.showInfo.categories}}</p>
+  </ion-item>
+
+  <ion-item class="inputsItem">
+    <ion-label class="myActivityListLabel" floating>Preferred Date</ion-label>
+    <ion-datetime displayFormat="YYYY MM DD" min="2017" max="2018-12-31" class="myActivityListInput" name="preferredDay" [(ngModel)]="activity.preferredDay"></ion-datetime>
+  </ion-item>
+  <ion-item class="inputsItem">
+    <ion-label class="myActivityListLabel" floating>Number of People</ion-label>
+    <ion-input class="myActivityListInput" type="number" name="numberOfPeople" [(ngModel)]="activity.numberOfPeople"></ion-input>
+  </ion-item>
+</div>

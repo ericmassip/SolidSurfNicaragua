@@ -1,0 +1,62 @@
+.theTownDiscoverContainer{
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    color: white;
+    padding-bottom: 30px;
+    img {
+        position:relative; 
+        width: 100%;
+        height: 142px;
+    }
+    h1 {
+        position:absolute; 
+        top:10%; 
+        right:8%;
+    }
+    h2 {
+        padding: 40px 0px 0px 11px; 
+        margin: 0px;
+    }
+    p {
+        text-align: justify;
+        margin: 16px;
+        margin-bottom: 50px;
+    }
+    ion-grid {
+        padding: 0px;
+    }
+
+    ion-col {
+        padding: 0px;
+    }
+    .card-background-page {
+        ion-card {
+            position: relative;
+            text-align: center;
+        }
+        .card-subtitle {
+            position: absolute;
+            top: 36%;
+            font-size: 1.0em;
+            width: 100%;
+        }
+    }
+}
+
+.cardSubtitleStyling {
+    background-color: grey;
+    padding: 5px 5px 5px 5px;
+    text-align: justify;
+}
+
+.whiteColor {
+    color: white !important;
+}
+
+.blackColor {
+    color: black;
+}
+
+.greenColor {
+    color: #3CB54A;
+}

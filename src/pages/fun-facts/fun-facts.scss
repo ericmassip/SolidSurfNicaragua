@@ -1,0 +1,18 @@
+.funFactsContainer {
+    text-align: justify;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    color: #292929;
+    ul {
+        padding-left: 20px;
+        padding-right: 10px;
+        margin-bottom: 80px;
+        li {
+            color: purple; /* bullet color */
+            padding: 6px;
+        }
+        li span {
+            color: #292929; /* text color */
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.volunteer-bg-style {
+    background-color: #8B13C1;
+}
+
+.volunteerProgramTitle {
+    margin: -0.18em;
+
+    h2 {
+    padding: 8px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+    background-color: #8B13C1;
+    }
+}
+
+.volunteerContainer {
+    background-color: #FFFFFF;
+    color: #292929;
+    padding-bottom: 40px;
+    ion-grid {
+        padding: 12px 12px 0px 12px;
+    }
+    h3 {
+        padding: 30px 16px 8px 16px;
+        color: #8B13C1;
+    }
+    .colorBlue {
+        color: #003C79;
+    }
+    .colorGreen {
+        color: #3CB54A;
+    }
+    p {
+        font-size: 13px;
+        text-align: justify;
+        margin: 0px;
+        padding: 8px 16px 8px 16px;
+    }
+    ul {
+        margin: 0px;
+    }
+}

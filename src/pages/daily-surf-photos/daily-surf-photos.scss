@@ -1,0 +1,24 @@
+.dailySurfPhotosContainer{
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #292929;
+    p {
+        text-align: justify;
+        padding: 16px 16px 4px 16px;
+        margin: 0px;
+    }
+    li {
+        padding: 2px;
+        text-align: left;
+    }
+    img {
+        padding: 16px 16px 28px 16px;
+    }
+}
+
+.goToServerButton {
+    border-radius: 0px;
+    background-color: #F26722;
+    color: white;
+    padding: 0px 35px 0px 35px;
+}

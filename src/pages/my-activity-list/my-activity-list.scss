@@ -1,0 +1,71 @@
+.my-activity-list-bg-style{
+    background-color: #28C0DA;
+}
+
+.myActivityListh2Title {
+    margin: -0.18em;
+
+    h2 {
+    padding: 8px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+    background-color: #28C0DA;
+    }
+}
+
+.allInclusiveContainer{
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #292929;
+    h2 {
+        margin: 20px;
+    }
+    .activitiesItems {
+        margin: 0px;
+        h2 {
+            color: #28C0DA;
+            margin: 0px;
+        }
+        p {
+            margin: 0px;
+            padding: 0px;
+            font-size: 12px;
+        }
+    }
+    ion-label {
+        margin-bottom: 0px;
+    }
+    .myActivityListLabel {
+        text-align: left;
+        color: #8B13C1;
+    } 
+    .myActivityListInput {
+        text-align: left;
+    }
+    .inputsItem {
+        margin: 0px;
+        padding: 0px 42px 0px 100px;
+    }
+}
+
+.activityDiv {
+    padding-bottom: 30px;
+}
+
+.turquoiseBlueColor {
+    color: #28C0DA;
+}
+
+.signUpButton {
+    border-radius: 0px;
+    background-color: #F26722;
+    color: white;
+    padding: 0px 35px 0px 35px;
+}
+
+.signUpInfoText {
+    text-align: center;
+    color: #6E6E6E;
+    font-size: 12px;
+}

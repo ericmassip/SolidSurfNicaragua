@@ -1,0 +1,138 @@
+<ion-header>
+
+  <ion-navbar  color="volunteerBackground">
+    <ion-title>Volunteer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="volunteer-bg-style">
+
+  <img height="250" width="100%" src="assets/img/volunteer/VolunteerTop.png" alt="Volunteer">
+
+  <div class="volunteerProgramTitle">
+    <h2 class="myriadFont">VOLUNTEER PROGRAM</h2>
+  </div>
+
+  <div class="volunteerContainer">
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col text-right>
+          <img width="80%" src="assets/img/volunteer/NICALogo.png" (click)="openWebpage('http://nicafund.org/')" alt="NICA">
+        </ion-col>
+        <ion-col text-left>
+          <img width="80%" src="assets/img/volunteer/ETCALogo.png" (click)="openWebpage('http://eltransitoarts.weebly.com/')" alt="ETCA">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <p>We believe you shouldn’t have to choose between a surf vacation 
+and a volunteer trip. We believe that you can volunteer while also 
+taking the time to relax and recharge and believe that the best 
+way to connect with a community is to immerse yourself within it 
+by also lending a hand. That is why we have created a volunteer 
+program that provides the flexibility to also surf, explore and relax
+while traveling in Nicaragua.<br><br>
+
+Prior to your stay, we work with two local non-profits and the El 
+Transito community to plan small projects and/or volunteer 
+sessions you can partake in. There are unlimited ways to make 
+a difference and we cater your volunteer experience based on how you 
+would like to help the community. Check out the video for more information
+and choose your project below!</p>
+
+    <ion-card *ngFor="let video of videos">
+      <ion-card-content style="padding: 0px; line-height: 0.7">
+        <iframe width="100%" height="200" [src]="video.video | youtube" frameborder="0" allowfullscreen></iframe>
+      </ion-card-content>
+    </ion-card>
+
+    <h3 class="myriadFont" text-center>ACTIVITY LIST</h3>
+
+    <p><span class="colorBlue"><b>PHYSICAL EDUCATION</b></span><br>
+      <span class="colorGreen"><b>Kids Surf Class / Possible Sat 10am, 60min</b></span><br>
+    <span class="colorGreen"><b>Kids Yoga / Possible Mon-Sat 2pm-5pm, 30min</b></span><br>
+    <span class="colorGreen"><b>Women's Yoga / Possible Sun 5pm, 50min</b></span><br>
+    Help us teach surfing and yoga to local kids (or adults) in order to 
+    encourage them to try something new and help build their 
+    confidence outside of just the classroom.</p>
+
+    <p><span class="colorBlue"><b>ENGLISH TEACHING ASSISTANT</b></span><br>
+    <span class="colorGreen"><b>Thursday / 1:30 pm - 2:30 pm (School)</b></span><br>
+    Help facilitate instruction during English class by organizing 
+    students, assisting in delivering instruction and helping 
+    students complete classwork.</p>
+
+    <p><span class="colorBlue"><b>SERVE LUNCH TO SCHOOL KIDS</b></span><br>
+    <span class="colorGreen"><b>Weekdays / 9:30 am - 10:30 am (Elementary School)</b></span><br>
+    <span class="colorGreen"><b>Weekdays / 11:30 - 1:00 PM  (High School)</b></span><br>
+    NICA Fund encourages parents to send their children to 
+    school by serving breakfast for the primary school and lunch 
+    for the secondary school. Help to organize students, prepare 
+    plates and serve food.</p>
+
+    <p><span class="colorBlue"><b>TOWN CLEANUP</b></span><br>
+    <span class="colorGreen"><b>Weekdays 6:00 am - 7:00 am (Beach)</b></span><br>
+    <span class="colorGreen"><b>Weekdays 3:00 pm - 4:00 pm (Street)</b></span><br>
+    Help keep our town clean through beach, water well, estuary 
+    and road cleanups, education on why throwing trash away 
+    and recycling is important.</p>
+
+    <p><span class="colorBlue"><b>PRE-K TEACHERS ASSISTANT</b></span><br>
+    <span class="colorGreen"><b>Weekdays / 9:00 am - 11:00 am</b></span><br>
+    Great with kids? Then you can help the Pre-K teacher with 
+    instruction and classroom management. The kids are always
+    eager to see new faces they can learn from.</p>
+
+    <p><span class="colorBlue"><b>CREA PROGRAM</b></span><br>
+    <span class="colorGreen"><b>Weekdays / 9:00am - 10:00 am</b></span><br>
+    <span class="colorGreen"><b>Weekdays / 1:00 pm - 2:00 pm</b></span><br>
+    The CREA Program (Crea means to grow) uses iPads and 
+    computers to help increase children’s reading and math a
+    bilities since most kids graduating High School only have a 
+    7th grade reading level. Reflex Math is used for the younger 
+    kids and Khan Academy’s online program for older kids. 
+    You can assist in the classroom or donate to the classroom..</p>
+
+    <p><span class="colorBlue"><b>LEARNING GARDEN</b></span><br>
+    <span class="colorGreen"><b>Weekdays / 2:00 pm - 3:00 pm</b></span><br>
+    Have a green thumb? Then help teach the local kids how to 
+    grow vegetables as well as tend the garden (water, plant 
+    and clean).</p>
+
+    <p><span class="colorBlue"><b>LOCAL SCHOOL PAINTING/BUILDING</b></span><br>
+    <span class="colorGreen"><b>Schedule Varies</b></span><br>
+    Help us improve the structure of the school and provide 
+    materials to keep kids interested in their education and future 
+    and increase attendance. (Project available based on needs)</p>
+
+    <p><span class="colorBlue"><b>MEDICAL CLINIC</b></span><br>
+    <span class="colorGreen"><b>Monday - Thursday / 9:00 am - 11:00 am</b></span><br>
+    Are you a nurse, doctor or dentist? Help us educate the town
+    and aid in the development of the medical services available.
+    Prior notice necessary for gainign health official approvals.</p>
+
+    <p><span class="colorBlue"><b>ART CENTER ACTIVITIES</b></span><br>
+    <span class="colorGreen"><b>Monday - Saturday / 2:00 pm - 5:00 pm</b></span><br>
+    Teach arts and crafts to kids or do recycling/upcycling projects with kids 
+    and teach about environmenttal effects of waste(plastic in ocean, etc.)</p>
+
+    <p><span class="colorBlue"><b>TURTLE SANCTUARY</b></span><br>
+    <span class="colorGreen"><b>Possible September - November</b></span><br>
+    Help protecting mother and baby turtles and witness the hatching process.</p>
+
+    <p><span class="colorBlue"><b>CUSTOMIZED PROGRAM</b></span><br>
+      <span class="colorGreen"><b>TBD</b></span><br>
+    We will work with the local community to put together a 
+    program that is tailored to your skill set. Just let us know what 
+    you’d like to help with, and we’ll take care of making it happen!</p>
+
+    <iframe style="width: 100%; height:900px" scrolling="yes" frameborder="0" src="https://www.fundmytravel.com/developer/iframe.php?code=53e0d2193e667" (click)="openWebpage('http://www.fundmytravel.com/partner/SOLID-Surf-Adventure')"></iframe>
+
+  </div>
+
+  <br><br>
+
+</ion-content>

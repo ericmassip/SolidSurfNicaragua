@@ -1,0 +1,125 @@
+<ion-header>
+
+  <ion-navbar color="allInclusiveBackground">
+    <ion-title>Activity Sign-Up</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="all-inclusive-bg-style">
+
+  <img height="250" width="100%" src="assets/img/all-inclusive/activity-sign-up/ActivitySignUpTop.jpg" alt="Activity Sign-Up">
+
+  <div class="categorySort-group">
+    <div class="categorySort-title whiteButtonBackgroundActivitySignUp">
+      <h2><b>CATEGORY</b></h2>
+    </div>
+    <div class="categorySort-title whiteButtonBackgroundActivitySignUp" style="padding-left: 30px">
+      <h2><b>SORT</b></h2>
+    </div>
+  </div>
+
+  <div class="activitySignUpContainer">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <ion-list>
+            <ion-item>
+              <ion-label>Couples</ion-label>
+              <ion-checkbox color="myActivityListBackground" [(ngModel)]="couples" (ionChange)="updateActivities()"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-label>Family</ion-label>
+              <ion-checkbox color="myActivityListBackground" [(ngModel)]="family" (ionChange)="updateActivities()"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-label>Friends</ion-label>
+              <ion-checkbox color="myActivityListBackground" [(ngModel)]="friends" (ionChange)="updateActivities()"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-label>Chill</ion-label>
+              <ion-checkbox color="myActivityListBackground" [(ngModel)]="chill" (ionChange)="updateActivities()"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-label>Active</ion-label>
+              <ion-checkbox color="myActivityListBackground" [(ngModel)]="active" (ionChange)="updateActivities()"></ion-checkbox>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+        <ion-col col-6>
+          <ion-list radio-group [(ngModel)]="sortingType">
+            <ion-item>
+              <ion-label>Distance</ion-label>
+              <ion-radio color="myActivityListBackground" value="distance" (ionSelect)="updateActivities()"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Tour Length</ion-label>
+              <ion-radio color="myActivityListBackground" value="tourLength" (ionSelect)="updateActivities()"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>PM Departure</ion-label>
+              <ion-radio color="myActivityListBackground" value="pmDeparture" (ionSelect)="updateActivities()"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Energy Level</ion-label>
+              <ion-radio color="myActivityListBackground" value="energyLevel" (ionSelect)="updateActivities()"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Cost</ion-label>
+              <ion-radio color="myActivityListBackground" value="cost" (ionSelect)="updateActivities()"></ion-radio>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+  <div class="allInclusiveh2Titles">
+    <h2>TOUR ACTIVITIES</h2>
+  </div>
+
+  <div class="activitySignUpContainer" padding-top padding-bottom>
+    <p><b>All-inclusive packages include transportation and guide
+        to one</b> of the tour activities listed below. The cost listed is what is 
+        estimated for the activity shall you choose to partake in as well as
+        $20 - 25 for a city meal. Souvenirs in the city markets run from 
+        $5 - $50 from little bracelets, tank tops, blankets and trinkets to 
+        beautiful paintings, sculptures and hammocks.<br><br>
+
+        Please sign up for the tour activity of your choice, and if you would 
+        like to add an additional tour to your package, the charge is $40 - 
+        $100 per person for transport / guide depending on the activity 
+        (based on length of tour and number of participants).  </p>
+
+    <hr class="orangeLine">
+
+    <sign-up-tour-activities-component></sign-up-tour-activities-component>
+
+  </div>
+
+  <div class="allInclusiveh2Titles">
+    <h2>LOCAL ACTIVITIES</h2>
+  </div>
+
+  <div class="activitySignUpContainer">
+    <p>On non-tour days, we have a number of other activities to partake
+        in. <b>One surf lesson and two yoga classes are included</b> in the
+        all-inclusive package. </p>
+
+    <hr class="orangeLine">
+
+    <sign-up-local-activities-component></sign-up-local-activities-component>
+    
+    <br><br>
+
+    <hr class="orangeLine">
+
+    <img src="assets/img/all-inclusive/activity-sign-up/MyActivityListLogo.png" alt="My Activity List" padding (click)="navigateTo('MyActivityListPage')">
+
+  </div>
+
+  <br><br>
+
+</ion-content>

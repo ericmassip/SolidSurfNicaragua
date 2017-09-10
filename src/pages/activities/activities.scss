@@ -1,0 +1,37 @@
+.activities-bg-style {
+    background-color: #3CB54A;
+}
+
+.citiesAndSitesTitle {
+    margin: -0.18em;
+
+    h2 {
+    padding: 8px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+    background-color: #3CB54A;
+    }
+}
+
+.activitiesContainer {
+    background-color: #FFFFFF;
+    color: #292929;
+    padding-bottom: 40px;
+    ion-grid {
+        padding: 12px 12px 0px 12px;
+    }
+    h3 {
+        margin: 0px;
+        padding: 40px 16px 0px 16px;
+        color: #719AC4;
+    }
+    p {
+        text-align: justify;
+        margin: 0px;
+        padding: 16px;
+    }
+    ul {
+        margin: 0px;
+    }
+}

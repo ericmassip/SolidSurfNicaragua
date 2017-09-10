@@ -1,0 +1,41 @@
+<h2 class="myriadFont greenColor">RESTAURANTS/BARS ({{restaurants.length}})</h2>
+<ion-slides pager>
+  <ion-slide *ngFor="let item of restaurants">
+    <ion-card>
+      <img src="{{item.image}}" />
+      <h1 class="whiteColor" *ngIf="!item.titleColor; else showBlackTitle">{{item.title}}</h1>
+      <ng-template #showBlackTitle>
+        <h1 class="blackColor">{{item.title}}</h1> 
+      </ng-template>  
+      <div class="card-title cardSubtitleStyling">{{item.subtitle}}</div>
+    </ion-card>
+  </ion-slide>
+</ion-slides>
+
+<h2 class="myriadFont greenColor">ACTIVITIES ({{activities.length}})</h2>
+<ion-slides pager>
+  <ion-slide *ngFor="let item of activities">
+    <ion-card>
+      <img src="{{item.image}}" />
+      <h1 class="whiteColor" *ngIf="!item.titleColor; else showBlackTitle">{{item.title}}</h1>
+      <ng-template #showBlackTitle>
+        <h1 class="blackColor">{{item.title}}</h1> 
+      </ng-template>
+      <div class="card-title cardSubtitleStyling">{{item.subtitle}}</div>
+    </ion-card>
+  </ion-slide>
+</ion-slides>
+
+<h2 class="myriadFont greenColor">SHOPS ({{shops.length}})</h2>
+<ion-slides pager>
+  <ion-slide *ngFor="let item of shops">
+    <ion-card>
+      <img src="{{item.image}}" />
+      <h1 class="whiteColor" *ngIf="!item.titleColor; else showBlackTitle">{{item.title}}</h1>
+      <ng-template #showBlackTitle>
+        <h1 class="blackColor">{{item.title}}</h1> 
+      </ng-template>   
+      <div class="card-title cardSubtitleStyling">{{item.subtitle}}</div>
+    </ion-card>
+  </ion-slide>
+</ion-slides>

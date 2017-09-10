@@ -1,0 +1,40 @@
+.the-town-bg-style {
+    background-color: #F2AA1E;
+}
+
+.btn-group .button {
+    //margin: -0.14em;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    font-style: bold;
+    cursor: pointer;
+    width: 50%;
+    float: left;
+}
+
+.whiteButtonBackgroundTheTown {
+    background-color: white;
+    border-top: 2px solid #F2AA1E;
+    border-right: 2px solid #F2AA1E;
+    border-bottom: 0px;
+    border-left: 2px solid #F2AA1E;
+    padding: 9px 6%;
+    button {
+        background-color: white;
+        b {
+            color: #F2AA1E;
+        }
+    }
+}
+
+.orangeButtonBackgroundTheTown {
+    background-color: #F2AA1E;
+    padding: 10px 6%;
+    button {
+        background-color: #F2AA1E;
+        b {
+            color: white;
+        }
+    }
+}

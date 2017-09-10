@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-navbar color="allInclusiveBackground">
+    <ion-title>All-Inclusive</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="all-inclusive-bg-style">
+
+  <img height="250" width="100%" src="assets/img/all-inclusive/AllInclusiveTop.jpg" alt="All-Inclusive">
+
+  <div class="btn-group" *ngIf="selectedTab==='Details'; else selectMyStuffTab">
+    <div class="button whiteButtonBackgroundAllInclusive" (click)="changeTab('Details')">
+      <button><span class="myriadFont"><b>DETAILS</b></span></button>
+    </div>
+    <div class="button orangeButtonBackgroundAllInclusive" (click)="changeTab('MyStuff')">
+      <button><span class="myriadFont"><b>MY STUFF</b></span></button>
+    </div>
+  </div>
+  <ng-template #selectMyStuffTab>
+    <div class="btn-group">
+      <div class="button orangeButtonBackgroundAllInclusive" (click)="changeTab('Details')">
+        <button><span class="myriadFont"><b>DETAILS</b></span></button>
+      </div>
+      <div class="button whiteButtonBackgroundAllInclusive" (click)="changeTab('MyStuff')">
+        <button><span class="myriadFont"><b>MY STUFF</b></span></button>
+      </div>
+    </div>
+  </ng-template>
+
+  <div class="allInclusiveContainer" *ngIf="selectedTab==='Details'; else showMyStuff">
+    <all-inclusive-details-component></all-inclusive-details-component>
+  </div>
+  <ng-template #showMyStuff>
+    <div class="allInclusiveContainer">
+      <all-inclusive-my-stuff-component></all-inclusive-my-stuff-component>
+    </div>
+  </ng-template>
+
+  <br><br>
+
+</ion-content>

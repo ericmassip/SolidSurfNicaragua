@@ -1,0 +1,79 @@
+<ion-header>
+
+  <ion-navbar color="whatToKnowBackground">
+    <ion-title>What To Know</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="what-to-know-bg-style">
+
+  <img width="100%" height="210" src="assets/img/what-to-know/WhatToKnowTop.png" alt="What To Know">
+
+  <div class="whatToKnowContainer">
+
+    <div (click)="navigateTo('YourArrivalPage')">
+      <h2 class="myriadFont pinkColor paddingLeft" padding-top>Planning Your Arrival</h2>
+      <ion-grid style="padding-left: 11px">
+        <ion-row>
+          <ion-col col-3 class="paddingTop">
+            <img width="100%" height="70px" src="assets/img/what-to-know/YourArrival.png" alt="Plan your Arrival">
+          </ion-col>
+          <ion-col col-9>
+            <p>
+              Important information for when you
+  arrive at the airport in Managua (MGA).
+  Includes visa information, baggage claim, 
+  transportation, currency/ATM info etc.  
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div (click)="navigateTo('SurfBreaksPage')">
+      <h2 class="myriadFont pinkColor" style="padding-left: 16px">Surf Breaks / Boards to Bring</h2>
+      <ion-grid style="padding-left: 11px">
+        <ion-row>
+          <ion-col col-3 class="paddingTop">
+            <img width="100%" height="70px" src="assets/img/what-to-know/SurfBreaksBoards.png" alt="Surf Breaks / Boards">
+          </ion-col>
+          <ion-col col-9>
+            <p>
+              See our recommendations for what
+  type of boards to bring based on the 
+  local breaks and types of waves that 
+  you may want to surf in Nicaragua.
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div (click)="navigateTo('FunFactsPage')">
+        <h2 class="myriadFont pinkColor" style="padding-left: 16px">Nicaragua: Fun Facts</h2>
+        <ion-grid style="padding-left: 11px">
+          <ion-row>
+            <ion-col col-3 class="paddingTop">
+              <img width="100%" height="70px" src="assets/img/what-to-know/CatedralLeon.png" alt="What To Know">
+            </ion-col>
+            <ion-col col-9>
+              <p>
+                Fun facts about the culture, history and
+    climate of Nicaragua to help you better 
+    understand the country you are visiting 
+    and the people you will connect with. 
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+  </div>
+
+  
+
+  <br>
+
+</ion-content>

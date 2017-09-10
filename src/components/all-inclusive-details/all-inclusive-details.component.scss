@@ -1,0 +1,47 @@
+.allInclusiveContainer{
+    background-color: #FFFFFF;
+    color: #292929;
+    h6 {
+        margin: 0px;
+        padding: 70px 16px 0px 16px;
+    }
+    p {
+        text-align: justify;
+        padding: 16px;
+        margin: 0px;
+    }
+    ion-grid {
+        p {
+            margin: 0px;
+            padding: 0px 8px 16px 8px;
+        }
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+.allInclusiveh2Titles {
+    margin: -0.18em;
+
+    h2 {
+    padding: 8px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+    background-color: #F26722;
+    }
+}
+
+.moreInfoButton {
+    border-radius: 0px;
+    padding: 0px 35px 0px 35px;
+}
+
+.noteForConsiderationContainer {
+    background-color: #F26722;
+    color: white;
+    p {
+        text-align: justify;
+        padding: 16px;
+    }
+}

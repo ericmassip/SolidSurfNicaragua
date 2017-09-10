@@ -1,0 +1,16 @@
+<ion-list no-lines *ngFor="let activity of localActivities">
+  <ion-item *ngIf="activity.isHidden===false" (click)="selectDeselectActivity(activity)">
+    <ion-avatar item-start padding>
+      <img *ngIf="activity.isSelected===false; else showSelectedLogo" src="assets/img/all-inclusive/activity-sign-up/NotSelectedActivityLogo.png">
+      <ng-template #showSelectedLogo>
+          <img src="assets/img/all-inclusive/activity-sign-up/SelectedActivityLogo.png">
+      </ng-template>
+    </ion-avatar>
+    <h2><b>{{activity.showInfo.title}}</b></h2>
+    <p>Tour Length: {{activity.showInfo.tourLength}}</p>
+    <p>Leave: {{activity.showInfo.pmDeparture}}</p>
+    <p>Energy Level: {{activity.showInfo.energyLevel}}</p>
+    <p>Cost: {{activity.showInfo.cost}}</p><br>
+    <p>{{activity.showInfo.categories}}</p>
+  </ion-item>
+</ion-list>

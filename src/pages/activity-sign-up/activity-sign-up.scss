@@ -1,0 +1,70 @@
+.categorySort-group .categorySort-title {
+    margin: -0.14em;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    font-style: bold;
+    width: 51%;
+    float: left;
+    h2 {
+        margin: 0px;
+    }
+}
+
+.whiteButtonBackgroundActivitySignUp {
+    background-color: white;
+    border-top: 2px solid #F26722;
+    border-bottom: 2px solid #F26722;
+    padding: 8px 32px;
+    h2 {
+        background-color: white;
+        b {
+            color: #F26722;
+        }
+    }
+}
+
+.orangeButtonBackgroundActivitySignUp {
+    background-color: #F26722;
+    padding: 10px 32px;
+    h2 {
+        background-color: #F26722;
+        b {
+            color: white;
+        }
+    }
+}
+
+.activitySignUpContainer{
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #292929;
+    ion-grid {
+        padding: 0px;
+        ion-col {
+            padding: 2px 0px 0px 0px;
+            border: 1px solid #F26722;
+        }
+    }
+    p {
+        text-align: justify;
+        padding: 24px 16px 40px 16px;
+        margin: 0px;
+    }
+    ion-list {
+        margin: 0px;
+        h2 {
+            color: #28C0DA;
+        }
+        p {
+            margin: 0px;
+            padding: 0px;
+            font-size: 12px;
+        }
+    }
+}
+
+.orangeLine {
+    border-top: 1px solid #F26722;
+    width: 80%;
+}

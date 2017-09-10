@@ -1,0 +1,129 @@
+<ion-header>
+  
+  <ion-navbar color="aboutUsBackground">
+    <ion-title>About Us</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="about-us-bg-style">
+  
+  <img height="210" width="100%" src="assets/img/about-us/AboutUsTop.png" alt="About Us">
+
+  <div class="aboutUsContainer">
+    <img src="assets/img/logo_since2012.png" alt="Since 2012">
+    <h3><span class="myriadFont orangeColor">S</span><span class="herculanumLetters">urf </span><span class="myriadFont orangeColor">O</span><span class="herculanumLetters">pportunities </span><span class="herculanumSmallLetters">to </span><span class="myriadFont orangeColor">L</span><span class="herculanumLetters">earn<br></span><span class="myriadFont orangeColor">I</span><span class="herculanumLetters">nspire </span><span class="herculanumSmallLetters">&amp; make a </span><span class="myriadFont orangeColor">D</span><span class="herculanumLetters">ifference</span></h3>
+    <p>It started with a simple idea: travel to a new place, 
+in search of warm weather, good waves and a
+simpler life. However, it didn’t take long for this 
+idea to transform into a deep desire to get to know 
+the culture, land, and people of Nicaragua giving 
+birth to a larger vision.<br><br>
+
+A vision to create a cross-cultural experiential travel 
+company that would not only be profitable, but also 
+provide economic opportunity in under-developed 
+communities with social conscious, integrity and 
+professionalism at the forefront and exist as a model 
+for expansion and growth in Central America.<br><br>
+
+Born in the small fishing village of El Transito in 2012, 
+the company initially opened a surf camp focused on 
+all-inclusive packages with handpicked activities that 
+deliver an authentic and safe experience in Nicaragua 
+while enabling guests to expand personal knowledge 
+through cultural experiences like historic city tours 
+and community volunteering.<br><br> 
+
+A few years later, and after meeting a ton of wonderful 
+people who were either backpacking their way through 
+Central America or living in Managua and wanted a beach 
+escape, SOLID decided to expand the surf camp to include 
+a Bed + Breakfast (January 2016) and Surf Hostel (March 2016). 
+Regardless of what type of accommodation is chosen, the same 
+friendly and professional service people have come to know 
+SOLID for is experienced by everyone who travels with us in Nicaragua.
+    </p>
+    <about-us-slides></about-us-slides>
+
+    <h2 class="blueColor">El Transito Surf Culture</h2>
+    <p>
+      When co-founder Jhon Ocanto arrived to El Transito 
+in 2010, he taught the first locals how to surf and thus
+began the surf culture we have today. With the help of 
+co-founder, Allison Kendro, more locals were taught to surf and 
+to teach which led
+to the birth of the second generation of surfers. Due 
+to this close connection, the surf culture is super 
+friendly and travelers are welcome into the water 
+which makes El Transito a super special town to visit. 
+Find out more in the video below!
+    </p>
+
+    <ion-card *ngFor="let video of videos">
+      <ion-card-content style="padding: 0px; line-height: 0.7">
+        <iframe width="100%" height="200" [src]="video.video | youtube" frameborder="0" allowfullscreen></iframe>
+      </ion-card-content>
+    </ion-card>
+
+    <h2 class="pinkColor" style="margin-top: 30px">Our Team</h2>
+    <ion-grid padding>
+      <ion-row>
+        <ion-col>
+          <img width="75" height="50" src="assets/img/about-us/team/1.jpg" alt="About Us">
+          <p class="staffNames">Martha</p>
+        </ion-col>
+        <ion-col>
+          <img width="75" height="50" src="assets/img/about-us/team/2.jpg" alt="Town">
+          <p class="staffNames">Rodrigo</p>
+        </ion-col>
+        <ion-col>
+          <img width="75" height="50" src="assets/img/about-us/team/3.png" alt="Town">
+          <p class="staffNames">Joel</p>
+        </ion-col>
+        <ion-col>
+          <img width="75" height="50" src="assets/img/about-us/team/4.jpg" alt="Town">
+          <p class="staffNames">Pepe</p>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col>
+          <img width="75" height="50" src="assets/img/about-us/team/5.jpg" alt="About Us">
+          <p class="staffNames">Efrain</p>
+        </ion-col>
+        <ion-col>
+          <img width="75" height="50" src="assets/img/about-us/team/6.jpg" alt="Town">
+          <p class="staffNames">Andrea</p>
+        </ion-col>
+        <ion-col>
+          <img width="75" height="50" src="assets/img/about-us/team/7.jpg" alt="Town">
+          <p class="staffNames">Rosa Maria</p>
+        </ion-col>
+        <ion-col>
+          <img width="75" height="50" src="assets/img/about-us/team/8.jpg" alt="Town">
+          <p class="staffNames">Maritza</p>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col col-3>
+          <img width="75" height="50" src="assets/img/about-us/team/9.png" alt="About Us">
+          <p class="staffNames">Edgar</p>
+        </ion-col>
+        <ion-col col-3>
+          <img width="75" height="50" src="assets/img/about-us/team/10.png" alt="Town">
+          <p class="staffNames">Jose</p>
+        </ion-col>
+        <ion-col col-3>
+          <img width="75" height="50" src="assets/img/about-us/team/11.jpg" alt="Town">
+          <p class="staffNames">Katherine</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <h3 text-center><span class="herculanumLetters whiteColor">More than </span><span class="myriadFont whiteColor">90% </span><span class="herculanumLetters whiteColor">of <br>our team is local</span></h3>
+
+</ion-content>

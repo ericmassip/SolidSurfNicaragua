@@ -1,0 +1,15 @@
+<ion-header>
+
+  <ion-navbar color="homeBackground">
+    <ion-title>Contact</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeModalSendMessage()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+  
+</ion-header>
+
+
+<ion-content class="home-bg-style">
+  <send-message-component (sendMessage)="sendMessage($event)" ></send-message-component>
+</ion-content>

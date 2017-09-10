@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-navbar color="myActivityListBackground">
+    <ion-title>My Activity List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="my-activity-list-bg-style">
+
+  <img height="250" width="100%" src="assets/img/all-inclusive/my-activity-list/MyActivityListTop.png" alt="My Activity List">
+
+  <div class="myActivityListh2Title">
+    <h2>SUBMIT YOUR LIST</h2>
+  </div>
+
+  <div class="allInclusiveContainer" padding-top padding-bottom>
+
+    <hr class="orangeLine">
+    <h2 class="orangeColor" text-center>TOUR ACTIVITIES</h2>
+    <hr class="orangeLine">
+
+    <my-activity-list-selected-tour-activities-component></my-activity-list-selected-tour-activities-component>
+
+    <hr class="orangeLine">
+    <h2 class="orangeColor" text-center>LOCAL ACTIVITIES</h2>
+    <hr class="orangeLine">
+
+    <my-activity-list-selected-local-activities-component></my-activity-list-selected-local-activities-component>
+
+    <button class="turquoiseBlueColor" ion-button clear (click)="navigateTo('ActivitySignUpPage')"><b>EDIT / ADD MORE</b></button>
+
+    <br>
+
+    <button class="signUpButton" ion-button (click)="sendSignedUpActivities()"><b>SIGN-UP NOW!</b></button>
+
+    <p class="signUpInfoText"text-center>Send in your activity list now<br>
+                                          by clicking the above button.</p>
+
+  </div>
+
+  <br><br>
+
+</ion-content>

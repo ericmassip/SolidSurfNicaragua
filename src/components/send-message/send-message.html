@@ -1,0 +1,49 @@
+<form #sendMessage="ngForm" novalidate>
+  <ion-card>
+    <ion-card-content>
+
+      <ion-item>
+        <ion-label floating>Full Name</ion-label>
+        <ion-input type="text" [(ngModel)]="contactMessage.name" name="name" #name="ngModel" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Number of People</ion-label>
+        <ion-input type="number" [(ngModel)]="contactMessage.numberOfPeople" name="numberOfPeople" #numberOfPeople="ngModel" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Accomodation Type</ion-label>
+        <ion-select [(ngModel)]="contactMessage.accomodationType" name="accomodationType" #accomodationType="ngModel" required>
+            <ion-option value="SurfHostel">Surf Hostel</ion-option>
+            <ion-option value="AllInclusive">All-Inclusive (Non Lux Resort)</ion-option>
+            <ion-option value="BedAndBreakfast">Bed &amp; Breakfast</ion-option>
+            <ion-option value="GroupRetreat">Group Retreat</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+          <ion-label floating>Surf Experience</ion-label>
+          <ion-select [(ngModel)]="contactMessage.surfExperience" name="surfExperience" #surfExperience="ngModel" required>
+              <ion-option value="VariousLevels">Various Levels</ion-option>
+              <ion-option value="Beginner">Beginner (White water)</ion-option>
+              <ion-option value="AdvancedBeginner">Advanced Beginner (Green Wave)</ion-option>
+              <ion-option value="Intermediate">Intermediate</ion-option>
+              <ion-option value="Advanced">Advanced+</ion-option>
+          </ion-select>
+        </ion-item>
+
+      <ion-item>
+        <ion-label floating>Message</ion-label>
+        <ion-textarea [(ngModel)]="contactMessage.message" name="message" #message="ngModel" required></ion-textarea>
+      </ion-item>
+
+      <div padding *ngIf="name.invalid || message.invalid || accomodationType.invalid || surfExperience.invalid || numberOfPeople.invalid">
+        <span class="global__input-error">Fill in all required fields</span>
+      </div>
+
+      <button ion-button block (click)="sendContactMessage()" [disabled]="sendMessage.invalid">Send Message</button>
+
+    </ion-card-content>
+  </ion-card>
+</form>

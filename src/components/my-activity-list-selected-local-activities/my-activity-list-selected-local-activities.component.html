@@ -1,0 +1,26 @@
+<div class="activityDiv" *ngFor="let activity of selectedLocalActivities">
+  <ion-item class="activitiesItems" no-lines>
+    <ion-avatar item-start padding>
+      <img src="assets/img/all-inclusive/activity-sign-up/SelectedActivityLogo.png">
+    </ion-avatar>
+    <h2><b>{{activity.showInfo.title}}</b></h2>
+    <p>Length: {{activity.showInfo.tourLength}}</p>
+    <p>Leave: {{activity.showInfo.pmDeparture}}</p>
+    <p>Energy Level: {{activity.showInfo.energyLevel}}</p>
+    <p>Cost: {{activity.showInfo.cost}}</p><br>
+    <p>{{activity.showInfo.categories}}</p>
+  </ion-item>
+
+  <ion-item class="inputsItem">
+    <ion-label class="myActivityListLabel" floating>Number of Times</ion-label>
+    <ion-input class="myActivityListInput" type="number" name="numberOfTimes" [(ngModel)]="activity.numberOfTimes"></ion-input>
+  </ion-item>
+  <ion-item class="inputsItem">
+    <ion-label class="myActivityListLabel" floating>Number of People</ion-label>
+    <ion-input class="myActivityListInput" type="number" name="numberOfPeople" [(ngModel)]="activity.numberOfPeople"></ion-input>
+  </ion-item>
+  <ion-item class="inputsItem">
+    <ion-label class="myActivityListLabel" floating>Note</ion-label>
+    <ion-input class="myActivityListInput" type="text" name="note" [(ngModel)]="activity.note"></ion-input>
+  </ion-item>
+</div>

@@ -1,0 +1,29 @@
+.all-inclusive-bg-style {
+    background-color: #F26722;
+}
+
+.whiteButtonBackgroundAllInclusive {
+    background-color: white;
+    border-top: 0px;
+    border-right: 2px solid #F26722;
+    border-bottom: 0px;
+    border-left: 2px solid #F26722;
+    padding: 10px 6%;
+    button {
+        background-color: white;
+        b {
+            color: #F26722;
+        }
+    }
+}
+
+.orangeButtonBackgroundAllInclusive {
+    background-color: #F26722;
+    padding: 10px 6%;
+    button {
+        background-color: #F26722;
+        b {
+            color: white;
+        }
+    }
+}

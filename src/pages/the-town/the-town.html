@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-navbar color="theTownBackground">
+    <ion-title>El Transito</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="the-town-bg-style">
+
+  <div #map id="map" style="height: 40%; width: 100%"></div>
+
+  <div class="btn-group" *ngIf="selectedTab==='Discover'; else selectInfoTab">
+    <div class="button whiteButtonBackgroundTheTown" (click)="changeTab('Discover')">
+      <button><span class="myriadFont"><b>DISCOVER</b></span></button>
+    </div>
+    <div class="button orangeButtonBackgroundTheTown" (click)="changeTab('Info')">
+      <button><span class="myriadFont"><b>INFO</b></span></button>
+    </div>
+  </div>
+  <ng-template #selectInfoTab>
+    <div class="btn-group">
+      <div class="button orangeButtonBackgroundTheTown" (click)="changeTab('Discover')">
+        <button><span class="myriadFont"><b>DISCOVER</b></span></button>
+      </div>
+      <div class="button whiteButtonBackgroundTheTown" (click)="changeTab('Info')">
+        <button><span class="myriadFont"><b>INFO</b></span></button>
+      </div>
+    </div>
+  </ng-template>
+
+  <div class="theTownDiscoverContainer card-background-page" *ngIf="selectedTab==='Discover'; else showInfo">
+    <the-town-discover></the-town-discover>
+  </div>
+  <ng-template #showInfo>
+    <div class="theTownInfoContainer">
+      <the-town-info></the-town-info>
+    </div>
+  </ng-template>
+
+  <br><br>
+
+</ion-content>

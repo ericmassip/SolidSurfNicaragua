@@ -1,0 +1,24 @@
+<div class="allInclusiveMyStuffContainer">
+  <ion-grid text-center>
+    <ion-row>
+      <ion-col col-6 (click)="navigateTo('ActivitySignUpPage')" padding>
+        <img width="65%" height="65%" src="assets/img/all-inclusive/my-stuff/ActivitySignUpLogo.png">
+        <h5 style="padding-top: 18px">Activity Sign-Up</h5>
+      </ion-col>
+      <ion-col col-6 (click)="navigateTo('DailySurfPhotosPage')" padding>
+          <img width="65%" height="65%" src="assets/img/all-inclusive/my-stuff/DailyPhotosLogo.png">
+        <h5>Daily Surf Photos</h5>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6 (click)="sendWaiver()" padding>
+        <img width="65%" height="65%" src="assets/img/all-inclusive/my-stuff/DownloadWaiverLogo.png">
+        <h5>Download Waiver</h5>
+      </ion-col>
+      <ion-col col-6 padding (click)="openWebpage('http://www.solidsurfadventure.com/booking-payments/')">
+        <img width="65%" height="65%" src="assets/img/all-inclusive/my-stuff/TripPaymentLogo.png">
+        <h5 style="padding-top: 14px">Trip Payment</h5>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

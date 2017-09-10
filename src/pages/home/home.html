@@ -1,14 +1,60 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="homeBackground">
     <ion-title>
-      Ionic Blank
+      Home
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="home-bg-style">
+  
+  <img class="homeLogo" src="assets/img/home/SolidLogo.png" alt="Logo" padding>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img class="rounded-corners" src="assets/img/home/AboutUsLogo.png" alt="About Us" (click)="navigateTo('AboutUsPage')">
+      </ion-col>
+      <ion-col>
+        <img class="rounded-corners" src="assets/img/home/ElTransitoLogo.png" alt="El Transito" (click)="navigateTo('TheTownPage')">
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img class="rounded-corners" src="assets/img/home/WhatToKnowLogo.png" alt="What To Know" (click)="navigateTo('WhatToKnowPage')">
+      </ion-col>
+      <ion-col>
+        <img class="rounded-corners" src="assets/img/home/ExploreLogo.png" alt="Explore" (click)="navigateTo('ActivitiesPage')">
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <img class="rounded-corners" src="assets/img/home/AllInclusiveLogo.png" alt="All-Inclusive" (click)="navigateTo('AllInclusivePage')">
+      </ion-col>
+      <ion-col>
+        <img class="rounded-corners" src="assets/img/home/VolunteerLogo.png" alt="Volunteer" (click)="navigateTo('VolunteerPage')">
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="media-icons-row">
+      <ion-col col-3 text-right>
+        <img src="assets/img/home/message.png" alt="Message" (click)="openModalSendMessage()">
+      </ion-col>
+      <ion-col col-2>
+        <img src="assets/img/home/facebook.png" alt="Facebook" (click)="openWebpage('http://www.facebook.com/solidsurfadventure/')">
+      </ion-col>
+      <ion-col col-2>
+        <img src="assets/img/home/instagram.png" alt="Instagram" (click)="openWebpage('http://www.instagram.com/solidsurfadventure/')">
+      </ion-col>
+      <ion-col col-2>
+        <img src="assets/img/home/vimeo.png" alt="Vimeo" (click)="openWebpage('http://vimeo.com/solidsurfadventure')">
+      </ion-col>
+      <ion-col col-3 text-left>
+        <img width="47" height="47" src="assets/img/home/tripadvisor.png" alt="Trip Advisor" (click)="openWebpage('http://www.tripadvisor.com.mx/Hotel_Review-g1432144-d5778538-Reviews-SOLID_Surf_Adventure-El_Transito_Leon_Department.html')">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>

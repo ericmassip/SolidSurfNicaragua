@@ -5,6 +5,19 @@
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
 
+// @font-face {
+//  font-family: 'Herculanum';
+//  src:url('../assets/Herculanum_Regular.ttf') format('truetype');
+//  font-weight: normal;
+//  font-style: normal;
+// }
+
+@font-face {
+  font-family: 'Herculanum';
+  src:url('../assets/fonts/Herculanum.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+ }
 
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
@@ -38,7 +51,15 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  homeBackground: #292929,
+  aboutUsBackground: #C33891,
+  whatToKnowBackground: #719AC4,
+  theTownBackground: #F2AA1E,
+  activitiesBackground: #3CB54A,
+  volunteerBackground: #8B13C1,
+  allInclusiveBackground: #F26722,
+  myActivityListBackground: #28C0DA
 );
 
 
