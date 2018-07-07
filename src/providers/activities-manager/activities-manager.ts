@@ -76,8 +76,6 @@ export class ActivitiesManagerProvider {
           return (a.orderInfo.pmDeparture > b.orderInfo.pmDeparture) ? 1 : -1;
         case 'energyLevel':
           return (a.orderInfo.energyLevel > b.orderInfo.energyLevel) ? 1 : -1;
-        case 'cost':
-          return (a.orderInfo.cost > b.orderInfo.cost) ? 1 : -1;
       }
     });
   }
@@ -92,7 +90,6 @@ export class ActivitiesManagerProvider {
       generatedHTMLBodyWithSelectedActivities += ` - Tour Length: ${activity.showInfo.tourLength}<br>`;
       generatedHTMLBodyWithSelectedActivities += ` - Leave: ${activity.showInfo.pmDeparture}<br>`;
       generatedHTMLBodyWithSelectedActivities += ` - Energy Level: ${activity.showInfo.energyLevel}<br>`;
-      generatedHTMLBodyWithSelectedActivities += ` - Cost: ${activity.showInfo.cost}<br>`;
       generatedHTMLBodyWithSelectedActivities += ` - Categories: ${activity.showInfo.categories}<br>`;
       generatedHTMLBodyWithSelectedActivities += ` - Preferred Day: ${activity.preferredDay}<br>`;
       generatedHTMLBodyWithSelectedActivities += ` - Number Of People: ${activity.numberOfPeople}<br><br>`;
@@ -104,7 +101,6 @@ export class ActivitiesManagerProvider {
       generatedHTMLBodyWithSelectedActivities += ` - Length: ${activity.showInfo.tourLength}<br>`;
       generatedHTMLBodyWithSelectedActivities += ` - Time: ${activity.showInfo.pmDeparture}<br>`;
       generatedHTMLBodyWithSelectedActivities += ` - Energy Level: ${activity.showInfo.energyLevel}<br>`;
-      generatedHTMLBodyWithSelectedActivities += ` - Cost: ${activity.showInfo.cost}<br>`;
       generatedHTMLBodyWithSelectedActivities += ` - Categories: ${activity.showInfo.categories}<br>`;
       generatedHTMLBodyWithSelectedActivities += ` - Number Of Times: ${activity.numberOfTimes}<br>`;
       generatedHTMLBodyWithSelectedActivities += ` - Number Of People: ${activity.numberOfPeople}<br>`;

@@ -5,7 +5,6 @@ export interface Activity {
         tourLength: string,
         pmDeparture: string,
         energyLevel: string,
-        cost: string,
         categories: string,
     },
     orderInfo: {
@@ -13,7 +12,6 @@ export interface Activity {
         tourLength: number,
         pmDeparture: number,
         energyLevel: number,
-        cost: number,
         categories: string[]
     }, 
     isSelected: boolean,
